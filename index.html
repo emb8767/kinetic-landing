@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kinetic Team - Wellness for Club Sport Families</title>
-    <meta name="description" content="Help your teen athlete thrive with Kinetic Team's wellness check-ins and parent insights. Now in beta with Nebraska Lacrosse families.">
+    <title>Kinetic Team - For Athletes Who Play the Long Game</title>
+    <meta name="description" content="2 minutes a day. See your own check-ins over time. Build the self-awareness that serious athletes develop. Now in beta with Nebraska Lacrosse families.">
     
     <!-- Tailwind CSS from CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,502 +12,626 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
         body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
     </style>
 </head>
-<body class="bg-gradient-to-b from-slate-50 to-white">
+<body class="bg-white">
 
     <!-- Navigation -->
-    <nav class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
-        <div class="flex items-center gap-2">
-            <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-sm">K</span>
+    <nav class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-sm">K</span>
+                </div>
+                <span class="font-semibold text-gray-900">Kinetic Team</span>
             </div>
-            <span class="font-semibold text-gray-900">Kinetic Team</span>
+            <a href="#waitlist" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">
+                Join Beta
+            </a>
         </div>
-        <a href="#waitlist" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">
-            Join Beta
-        </a>
     </nav>
 
     <!-- Hero Section -->
-    <section class="max-w-6xl mx-auto px-4 pt-16 pb-24 text-center">
-        <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
-            Now in Beta with Nebraska Lacrosse Families
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 bg-red-50 text-red-700 px-4 py-2 rounded-full text-sm font-medium mb-8">
+                <span class="text-lg">🥍</span>
+                Nebraska Lacrosse Exclusive Beta
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
+                Built for Athletes Who<br>
+                <span class="gradient-text">Play the Long Game</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto mb-4">
+                2 minutes a day. See your own check-ins over time. Build the self-awareness that serious athletes develop.
+            </p>
+            
+            <p class="text-lg text-gray-500 max-w-xl mx-auto mb-10">
+                For athletes who want to understand their own patterns.<br>
+                For parents who want visibility without intrusion.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#waitlist" class="bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-600/25">
+                    Join the Nebraska Lacrosse Beta →
+                </a>
+                <a href="#how-it-works" class="bg-gray-100 text-gray-700 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-200 transition">
+                    See How It Works
+                </a>
+            </div>
         </div>
-        
-        <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Help Your Teen Athlete<br>
-            <span class="text-blue-600">Thrive, Not Just Survive</span>
-        </h1>
-        
-        <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-            Kinetic Team gives athletes a space to reflect on their wellness—and gives parents 
-            visibility into how their teen is really doing. 
-            <span class="font-medium">2-minute daily check-ins. Real insights. Zero judgment.</span>
-        </p>
-        
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#waitlist" class="bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-600/25">
-                Join the Beta — It's Free →
-            </a>
-            <a href="#how-it-works" class="bg-white text-gray-700 px-8 py-4 rounded-xl text-lg font-semibold border border-gray-200 hover:border-gray-300 transition">
-                See How It Works
-            </a>
+    </section>
+
+    <!-- The Reality Section -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    70% of Kids Quit Sports by Age 13
+                </h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Not because they lack talent. Because it stops being fun.
+                </p>
+            </div>
+            
+            <div class="bg-white/10 rounded-2xl p-8 md:p-12">
+                <p class="text-lg text-gray-300 mb-6">
+                    <span class="text-white font-semibold">You're still here.</span> That says something.
+                </p>
+                <p class="text-lg text-gray-300 mb-6">
+                    The athletes who last aren't just physically gifted. They know themselves. They notice their own patterns—when they feel good, when they don't, what affects them. That awareness is what keeps them in the game.
+                </p>
+                <p class="text-lg text-gray-300 mb-8">
+                    Kinetic Team gives you a simple way to build that awareness: <span class="text-white font-semibold">a 2-minute daily check-in where you note how you're feeling.</span>
+                </p>
+                <p class="text-gray-400 text-sm">
+                    Over time, you see your own patterns. What you do with that information is up to you.
+                </p>
+            </div>
+            
+            <p class="text-center text-gray-500 text-sm mt-8">
+                Source: National Alliance for Youth Sports
+            </p>
+        </div>
+    </section>
+
+    <!-- For Athletes Section -->
+    <section id="how-it-works" class="py-24 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-green-50 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <span class="text-lg">🏃</span>
+                    For Athletes
+                </div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Your Check-Ins. Your Patterns. Your Awareness.
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Serious athletes pay attention. They notice when something feels different. They learn what works for them.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border border-green-100">
+                    <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">📝</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">2-Minute Daily Check-In</h3>
+                    <p class="text-gray-600">
+                        Note how you slept, your energy, what's going on. Quick. Private. Your words.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-100">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">📈</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">See Your Patterns Over Time</h3>
+                    <p class="text-gray-600">
+                        After a week, two weeks, a month—see what you've been sharing. Notice what keeps coming up. Build awareness of your own experience.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-violet-50 p-8 rounded-2xl border border-purple-100">
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">🔒</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Your Private Space</h3>
+                    <p class="text-gray-600">
+                        Parents see weekly trends (how often you mentioned certain topics). They don't see your actual entries unless you choose to share. Coaches see nothing.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl border border-amber-100">
+                    <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">🏆</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Stay in the Game</h3>
+                    <p class="text-gray-600">
+                        The athletes who last are the ones who understand themselves. Self-awareness isn't soft—it's what keeps you playing longer.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-gray-900 rounded-2xl p-8 text-center">
+                <p class="text-xl text-white font-medium">
+                    No scores. No grades. Just your own words, reflected back to you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Parents Section -->
+    <section class="py-24 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <span class="text-lg">👨‍👩‍👧</span>
+                    For Parents
+                </div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Visibility Without Intrusion
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    You want to know how they're doing. They don't always tell you.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">📊</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Weekly Pattern Summaries</h3>
+                    <p class="text-gray-600">
+                        See what topics came up in their check-ins this week. "'Tired' mentioned 4 times" is information. What it means is for you to interpret.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">👁️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Trends, Not Surveillance</h3>
+                    <p class="text-gray-600">
+                        You see word frequency and themes. You don't see their actual entries unless they share them. Built for trust.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">🤝</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">You're the Expert</h3>
+                    <p class="text-gray-600">
+                        We show you patterns. We don't interpret them. We don't tell you what to do. You know your teen. You decide what matters.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 max-w-3xl mx-auto">
+                <div class="flex items-start gap-3">
+                    <span class="text-xl">ℹ️</span>
+                    <p class="text-blue-800 text-sm">
+                        <span class="font-semibold">Important:</span> Kinetic Team shows patterns from self-reported check-ins. We don't diagnose, interpret, or recommend action. Parents and teens decide what the information means and what, if anything, to do.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Makes Us Different Section -->
+    <section class="py-24 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Not Another Wellness App
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    You've seen the apps. Mood trackers that feel like homework. Wearables that spit out numbers. Social platforms that turn everything into competition.
+                </p>
+            </div>
+            
+            <div class="space-y-6">
+                <!-- Differentiator 1 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition">
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <span class="text-2xl">🎯</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Built for How Athletes Talk</h3>
+                            <p class="text-gray-600 mb-4">
+                                Generic apps misread athlete language. When someone writes "that workout killed me," most apps flag it as negative.
+                            </p>
+                            <p class="text-gray-600">
+                                Kinetic Team understands athlete communication. Our system recognizes that "killed me" typically means intense effort, not distress. Your check-ins are processed accurately.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Differentiator 2 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition">
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <span class="text-2xl">🚫</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">No Scores. Ever.</h3>
+                            <p class="text-gray-600 mb-4">
+                                Most apps give you numbers. Readiness: 67. Stress Level: High.
+                            </p>
+                            <p class="text-gray-600">
+                                Kinetic Team shows you <span class="font-semibold">your own words over time</span>. No scores. No grades. No rankings. Just patterns in what you've shared.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Differentiator 3 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition">
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <span class="text-2xl">📋</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">See Multiple Dimensions</h3>
+                            <p class="text-gray-600 mb-4">
+                                In a 2-minute check-in, you can note:
+                            </p>
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                                <div class="bg-gray-50 px-3 py-2 rounded-lg text-sm text-gray-700">😴 How you slept</div>
+                                <div class="bg-gray-50 px-3 py-2 rounded-lg text-sm text-gray-700">⚡ Your energy today</div>
+                                <div class="bg-gray-50 px-3 py-2 rounded-lg text-sm text-gray-700">💭 What's on your mind</div>
+                                <div class="bg-gray-50 px-3 py-2 rounded-lg text-sm text-gray-700">🏫 Context (school, practice)</div>
+                                <div class="bg-gray-50 px-3 py-2 rounded-lg text-sm text-gray-700">💪 Physical notes</div>
+                                <div class="bg-gray-50 px-3 py-2 rounded-lg text-sm text-gray-700">📱 Optional HealthKit data</div>
+                            </div>
+                            <p class="text-gray-500 text-sm mt-4">
+                                More visibility into your own experience. You interpret what it means.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Differentiator 4 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition">
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <span class="text-2xl">🔐</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Privacy by Design</h3>
+                            <div class="space-y-2 text-gray-600">
+                                <p><span class="font-semibold">Athletes</span> see everything they write.</p>
+                                <p><span class="font-semibold">Parents</span> see weekly summaries: topic frequency, themes that came up. Not the actual entries (unless the athlete shares them).</p>
+                                <p><span class="font-semibold">Coaches</span> see nothing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Differentiator 5 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition">
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <span class="text-2xl">✋</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Information Only</h3>
+                            <div class="space-y-2 text-gray-600">
+                                <p>We don't tell you what your patterns mean.</p>
+                                <p>We don't suggest what to do.</p>
+                                <p>We don't define "good" or "bad."</p>
+                            </div>
+                            <p class="text-gray-900 font-semibold mt-4">
+                                You see your data. You decide what matters.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Differentiator 6 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition">
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <span class="text-2xl">🤝</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">No Competition</h3>
+                            <p class="text-gray-600">
+                                No leaderboards. No public streaks. No "compare yourself to others." Your check-ins are yours. If you want team insights, they're anonymous and aggregated—showing shared experiences, not rankings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Approach Section -->
+    <section class="py-24 px-4 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                Simple Self-Monitoring
+            </h2>
+            <p class="text-xl text-gray-600 mb-8">
+                The idea isn't complicated: athletes who pay attention to how they're feeling tend to last longer in their sport.
+            </p>
+            <p class="text-lg text-gray-600 mb-8">
+                Professional and college programs have used daily wellness check-ins for years. Athletes note sleep, energy, soreness, mood. Over time, patterns emerge.
+            </p>
+            <p class="text-lg text-gray-600 mb-12">
+                Kinetic Team brings that same simple approach to club sport families—without the clinical feel, without scores, without telling you what to do.
+            </p>
+            
+            <div class="bg-gray-900 rounded-2xl p-8 inline-block">
+                <p class="text-xl text-white font-medium">
+                    Check in. See your patterns. You take it from there.
+                </p>
+            </div>
         </div>
     </section>
 
     <!-- Nebraska Lacrosse Section -->
-    <section class="border-y border-gray-100 py-12 bg-gradient-to-r from-red-50 to-amber-50">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <div class="text-4xl mb-4">🥍</div>
-            <h2 class="text-2xl font-bold text-gray-900 mb-3">
-                Built for Nebraska Lacrosse Families
-            </h2>
-            <p class="text-gray-600 max-w-2xl mx-auto mb-4">
-                Our beta is exclusively for Nebraska lacrosse families—the community working hardest to grow the sport 
-                and earn NSAA sanctioning. By joining, you're not just helping your family—you're showing what 
-                organized, committed lacrosse families look like.
-            </p>
-            <p class="text-sm text-gray-500">
-                <span class="font-medium">After our Nebraska beta:</span> Hockey, soccer, wrestling, and club sport families nationwide.
-            </p>
-        </div>
-    </section>
-
-    <!-- Problem Section -->
-    <section class="max-w-6xl mx-auto px-4 py-24">
-        <div class="max-w-3xl mx-auto text-center mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">
-                You Know Something's Off, But Your Teen Won't Talk
-            </h2>
-            <p class="text-lg text-gray-600">
-                They seem tired. Stressed. Maybe burnt out. But when you ask "how was practice?"
-                you get the same one-word answer: <span class="font-medium">"Fine."</span>
-            </p>
-        </div>
-        
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
-                <div class="text-3xl mb-4">😰</div>
-                <h3 class="font-semibold text-gray-900 mb-2">The Worry</h3>
-                <p class="text-gray-600 text-sm">
-                    Is this normal teenage stuff, or something more? You don't want to overreact—
-                    but you don't want to miss warning signs either.
-                </p>
-            </div>
-            <div class="bg-amber-50 p-6 rounded-2xl border border-amber-100">
-                <div class="text-3xl mb-4">🤐</div>
-                <h3 class="font-semibold text-gray-900 mb-2">The Silence</h3>
-                <p class="text-gray-600 text-sm">
-                    Teens don't always share. Asking directly feels like prying. 
-                    You're left guessing based on body language and slammed doors.
-                </p>
-            </div>
-            <div class="bg-purple-50 p-6 rounded-2xl border border-purple-100">
-                <div class="text-3xl mb-4">⚖️</div>
-                <h3 class="font-semibold text-gray-900 mb-2">The Balance</h3>
-                <p class="text-gray-600 text-sm">
-                    You want to support them without hovering. 
-                    Stay informed without surveillance. Help without helicoptering.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solution Section - Two Columns: Parents & Athletes -->
-    <section id="how-it-works" class="bg-gradient-to-b from-blue-50 to-white py-24">
-        <div class="max-w-6xl mx-auto px-4">
+    <section class="py-24 px-4 bg-gradient-to-r from-red-600 to-red-700 text-white">
+        <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">
-                    How Kinetic Team Works
+                <div class="text-6xl mb-6">🥍</div>
+                <h2 class="text-4xl font-bold mb-4">
+                    Built With Nebraska Lacrosse Families
                 </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    A simple daily ritual that helps athletes build self-awareness 
-                    and gives parents meaningful insight—without crossing boundaries.
+                <p class="text-xl text-red-100 max-w-2xl mx-auto">
+                    We're launching exclusively with Nebraska lacrosse families. Not randomly—because you're the right community to build this with.
                 </p>
             </div>
             
-            <!-- Two Column Layout -->
-            <div class="grid md:grid-cols-2 gap-8 mb-16">
-                
-                <!-- For Athletes -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
-                            <span class="text-2xl">🏃</span>
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white/10 rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold mb-6">Nebraska Lacrosse Community</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">🏟️</span>
+                            <span class="text-lg">20+ clubs across the state</span>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900">For Athletes</h3>
-                    </div>
-                    
-                    <div class="space-y-6">
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <span class="text-lg">📝</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">2-Minute Daily Check-In</h4>
-                                <p class="text-gray-600 text-sm">
-                                    Quick reflection on sleep, energy, stress, and mood. Like a personal journal—private and pressure-free.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <span class="text-lg">🧠</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">Build Self-Awareness</h4>
-                                <p class="text-gray-600 text-sm">
-                                    Notice patterns in how you feel. Learn what affects your performance and recovery.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <span class="text-lg">🎯</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">Prevent Burnout</h4>
-                                <p class="text-gray-600 text-sm">
-                                    Catch warning signs early. Know when to push harder and when to recover.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <span class="text-lg">🔒</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">Your Space, Your Words</h4>
-                                <p class="text-gray-600 text-sm">
-                                    Parents see trends, not your raw entries. Coaches see nothing. Express yourself honestly.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- For Parents -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                        <div class="flex items-center gap-3">
                             <span class="text-2xl">👨‍👩‍👧</span>
+                            <span class="text-lg">500+ families in organized programs</span>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900">For Parents</h3>
-                    </div>
-                    
-                    <div class="space-y-6">
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <span class="text-lg">📊</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">Trend Dashboard</h4>
-                                <p class="text-gray-600 text-sm">
-                                    See patterns over weeks, not individual entries. "Sleep has been down" is more useful than daily scores.
-                                </p>
-                            </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">📈</span>
+                            <span class="text-lg">Working toward NSAA recognition</span>
                         </div>
-                        
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <span class="text-lg">💬</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">Conversation Starters</h4>
-                                <p class="text-gray-600 text-sm">
-                                    Get suggestions for how to open dialogue. "Noticed energy's been low—want to talk about practice?"
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <span class="text-lg">⚡</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">Early Warning Signs</h4>
-                                <p class="text-gray-600 text-sm">
-                                    Spot concerning patterns before they become problems. Support your athlete proactively.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <span class="text-lg">🤝</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 mb-1">Stay Connected, Not Intrusive</h4>
-                                <p class="text-gray-600 text-sm">
-                                    Know how they're doing without prying. Build trust while staying informed.
-                                </p>
-                            </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">🎯</span>
+                            <span class="text-lg">Building something that lasts</span>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Dashboard Preview -->
-            <div class="max-w-2xl mx-auto">
-                <div class="bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
-                    <div class="bg-gray-900 rounded-xl p-4 mb-4">
-                        <div class="flex items-center gap-2 mb-4">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                            <span class="text-gray-400 text-xs ml-2">Parent Dashboard</span>
-                        </div>
-                        <div class="text-white font-medium mb-2">This Week's Wellness Trends</div>
-                        <div class="space-y-3">
-                            <div class="flex justify-between items-center">
-                                <span class="text-gray-400 text-sm">Energy</span>
-                                <div class="flex gap-1">
-                                    <div class="w-8 h-2 bg-blue-400 rounded"></div>
-                                    <div class="w-8 h-2 bg-blue-400 rounded"></div>
-                                    <div class="w-8 h-2 bg-blue-500 rounded"></div>
-                                    <div class="w-8 h-2 bg-blue-300 rounded"></div>
-                                    <div class="w-8 h-2 bg-blue-200 rounded"></div>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="text-gray-400 text-sm">Sleep</span>
-                                <div class="flex gap-1">
-                                    <div class="w-8 h-2 bg-amber-300 rounded"></div>
-                                    <div class="w-8 h-2 bg-amber-400 rounded"></div>
-                                    <div class="w-8 h-2 bg-amber-300 rounded"></div>
-                                    <div class="w-8 h-2 bg-amber-200 rounded"></div>
-                                    <div class="w-8 h-2 bg-amber-400 rounded"></div>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="text-gray-400 text-sm">Stress</span>
-                                <div class="flex gap-1">
-                                    <div class="w-8 h-2 bg-green-400 rounded"></div>
-                                    <div class="w-8 h-2 bg-green-300 rounded"></div>
-                                    <div class="w-8 h-2 bg-green-400 rounded"></div>
-                                    <div class="w-8 h-2 bg-yellow-400 rounded"></div>
-                                    <div class="w-8 h-2 bg-green-300 rounded"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-amber-50 rounded-lg p-3 border border-amber-100">
-                        <div class="flex items-start gap-2">
-                            <span class="text-lg">💡</span>
-                            <div>
-                                <p class="text-sm font-medium text-amber-800">Insight</p>
-                                <p class="text-sm text-amber-700">Sleep quality dropped mid-week. Common before tournament weekends—consider an earlier bedtime Thursday.</p>
-                            </div>
-                        </div>
-                    </div>
+                
+                <div class="bg-white/10 rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold mb-6">Why You're First</h3>
+                    <p class="text-red-100 mb-4">
+                        You're organized. You're committed. You're working toward NSAA sanctioning while managing demanding schedules. You take this seriously.
+                    </p>
+                    <p class="text-red-100">
+                        That's exactly the community we want to build with.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- NSAA Sanctioning Section -->
-    <section class="py-20 bg-gray-900 text-white">
-        <div class="max-w-4xl mx-auto px-4">
+    <!-- Supporting Sanctioning Section -->
+    <section class="py-24 px-4 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto">
             <div class="text-center mb-12">
-                <div class="inline-flex items-center gap-2 bg-red-500/20 text-red-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                    🎯 Supporting Nebraska Lacrosse Sanctioning
-                </div>
-                <h2 class="text-3xl font-bold mb-4">
-                    Help Build the Case for NSAA Recognition
+                <h2 class="text-4xl font-bold mb-4">
+                    Every Family Adds to the Case
                 </h2>
-                <p class="text-gray-300 max-w-2xl mx-auto">
-                    Nebraska lacrosse families are working toward NSAA sanctioning—and part of that effort 
-                    means showing that lacrosse families are organized, committed, and forward-thinking about athlete wellness.
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    NSAA sanctioning isn't just about wins. It's about showing that Nebraska lacrosse is organized and committed.
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white/10 rounded-xl p-6">
-                    <div class="text-2xl mb-3">📋</div>
-                    <h3 class="font-semibold mb-2">Demonstrate Organization</h3>
-                    <p class="text-gray-400 text-sm">
-                        Families using wellness tools show the kind of structure and commitment that strengthens the sanctioning case.
-                    </p>
-                </div>
-                <div class="bg-white/10 rounded-xl p-6">
-                    <div class="text-2xl mb-3">❤️</div>
-                    <h3 class="font-semibold mb-2">Prioritize Athlete Welfare</h3>
-                    <p class="text-gray-400 text-sm">
-                        Proactive wellness tracking shows Nebraska lacrosse takes athlete health seriously—a key factor for NSAA.
-                    </p>
-                </div>
-                <div class="bg-white/10 rounded-xl p-6">
-                    <div class="text-2xl mb-3">📈</div>
-                    <h3 class="font-semibold mb-2">Build Community Data</h3>
-                    <p class="text-gray-400 text-sm">
-                        Aggregated insights (always anonymous) can help demonstrate the size and engagement of Nebraska lacrosse families.
-                    </p>
+            <div class="bg-white/10 rounded-2xl p-8 mb-8">
+                <h3 class="text-xl font-semibold mb-6">When your family uses Kinetic Team:</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span class="text-green-400">✓</span>
+                        </div>
+                        <p class="text-gray-300">You demonstrate structure and engagement</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span class="text-green-400">✓</span>
+                        </div>
+                        <p class="text-gray-300">You're part of aggregate data showing community size</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span class="text-green-400">✓</span>
+                        </div>
+                        <p class="text-gray-300">You show that Nebraska lacrosse families invest in their programs</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="text-center mt-10">
-                <p class="text-gray-400 text-sm">
-                    The NSAA sanctioning decision could come as early as June 2025. 
-                    <span class="text-white font-medium">Every family that joins strengthens our community.</span>
-                </p>
-            </div>
+            <p class="text-center text-gray-400">
+                The sanctioning decision could come as early as <span class="text-white font-semibold">June 2025</span>. Community strength matters.
+            </p>
         </div>
     </section>
 
     <!-- What's Next Section -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">
-                What Comes After Nebraska Lacrosse?
+    <section class="py-24 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                Nebraska Lacrosse Is Just the Beginning
             </h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
-                Our Nebraska lacrosse beta is just the beginning. After we refine Kinetic Team with your feedback, 
-                we're expanding to serve all club sport families.
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-12">
+                After we build with Nebraska lacrosse families, we're expanding:
             </p>
             
-            <div class="grid md:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <div class="text-3xl mb-3">🏒</div>
-                    <h3 class="font-semibold text-gray-900">Hockey</h3>
-                    <p class="text-gray-500 text-sm">Early mornings, travel schedules, physical demands</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+                <div class="bg-gray-50 p-6 rounded-2xl">
+                    <div class="text-4xl mb-3">🏒</div>
+                    <h3 class="font-bold text-gray-900 mb-1">Hockey</h3>
+                    <p class="text-gray-500 text-sm">Early mornings, travel, physical demands</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <div class="text-3xl mb-3">⚽</div>
-                    <h3 class="font-semibold text-gray-900">Soccer</h3>
-                    <p class="text-gray-500 text-sm">Year-round play, club commitments, tournament travel</p>
+                <div class="bg-gray-50 p-6 rounded-2xl">
+                    <div class="text-4xl mb-3">⚽</div>
+                    <h3 class="font-bold text-gray-900 mb-1">Soccer</h3>
+                    <p class="text-gray-500 text-sm">Year-round schedules, club commitments</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <div class="text-3xl mb-3">🤼</div>
-                    <h3 class="font-semibold text-gray-900">Wrestling</h3>
-                    <p class="text-gray-500 text-sm">Weight management, intense training, mental toughness</p>
+                <div class="bg-gray-50 p-6 rounded-2xl">
+                    <div class="text-4xl mb-3">🤼</div>
+                    <h3 class="font-bold text-gray-900 mb-1">Wrestling</h3>
+                    <p class="text-gray-500 text-sm">Intense training, mental toughness</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <div class="text-3xl mb-3">🎾</div>
-                    <h3 class="font-semibold text-gray-900">And More</h3>
-                    <p class="text-gray-500 text-sm">Tennis, volleyball, swimming, gymnastics...</p>
+                <div class="bg-gray-50 p-6 rounded-2xl">
+                    <div class="text-4xl mb-3">🎾</div>
+                    <h3 class="font-bold text-gray-900 mb-1">And More</h3>
+                    <p class="text-gray-500 text-sm">Tennis, volleyball, swimming, gymnastics</p>
                 </div>
             </div>
             
-            <p class="text-gray-500 mt-8 text-sm">
-                Beta families get lifetime benefits and help shape features for their sport.
-            </p>
+            <div class="bg-blue-50 rounded-2xl p-8 max-w-2xl mx-auto">
+                <p class="text-blue-800 font-medium">
+                    But you're first. You shape the product. You get lifetime beta benefits.
+                </p>
+            </div>
         </div>
     </section>
 
-    <!-- Waitlist Form -->
-    <section id="waitlist" class="py-24">
-        <div class="max-w-xl mx-auto px-4">
-            <div class="bg-gradient-to-br from-blue-600 to-blue-700 rounded-3xl p-8 text-white shadow-xl">
+    <!-- Waitlist Section -->
+    <section id="waitlist" class="py-24 px-4">
+        <div class="max-w-xl mx-auto">
+            <div class="bg-gradient-to-br from-blue-600 to-blue-700 rounded-3xl p-8 md:p-12 text-white shadow-2xl">
                 <div class="text-center mb-8">
-                    <div class="inline-flex items-center gap-2 bg-white/20 px-3 py-1 rounded-full text-sm mb-4">
-                        <span class="w-2 h-2 bg-green-400 rounded-full"></span>
-                        Beta Access Open
+                    <div class="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full text-sm mb-6">
+                        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                        Now Accepting Applications
                     </div>
-                    <h2 class="text-3xl font-bold mb-2">Join the Nebraska Lacrosse Beta</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">Join the Nebraska Lacrosse Beta</h2>
                     <p class="text-blue-100">
-                        Free for Nebraska lacrosse families. Help us build something great—and support sanctioning efforts.
+                        Free for Nebraska lacrosse families. Limited spots.
                     </p>
                 </div>
                 
-                <!-- 
-                =====================================================
-                TO ADD TALLY FORM: 
-                1. Go to tally.so and create a free account
-                2. Create a form with: Name, Email, Role, Club
-                3. Click Publish, then Share > Embed
-                4. Replace the section below with your embed code
-                =====================================================
-                -->
-                
+                <!-- Email CTA (Replace with Tally form later) -->
                 <div class="space-y-4">
-                    <p class="text-center text-blue-100 text-sm mb-4">
-                        Interested in joining our beta? Email us directly:
-                    </p>
                     <a 
-                        href="mailto:joel1198@gmail.com?subject=Kinetic%20Team%20Beta%20-%20Nebraska%20Lacrosse&body=Hi%20Joel%2C%0A%0AI'm%20interested%20in%20joining%20the%20Kinetic%20Team%20beta%20for%20Nebraska%20lacrosse%20families.%0A%0AMy%20name%3A%20%0AMy%20role%3A%20(Parent%2FCoach%2FClub%20Admin)%0AClub%2FOrganization%3A%20%0ANumber%20of%20athletes%20in%20family%3A%20%0A%0AThanks!"
+                        href="mailto:joel1198@gmail.com?subject=Kinetic%20Team%20Beta%20-%20Nebraska%20Lacrosse&body=Hi%20Joel%2C%0A%0AI'm%20interested%20in%20joining%20the%20Kinetic%20Team%20beta%20for%20Nebraska%20lacrosse%20families.%0A%0AMy%20name%3A%20%0AI%20am%20a%3A%20(Athlete%20%2F%20Parent%20%2F%20Coach%20%2F%20Club%20Admin)%0AClub%2FOrganization%3A%20%0A%0AThanks!"
                         class="block w-full bg-white text-blue-600 px-6 py-4 rounded-xl font-semibold text-lg text-center hover:bg-blue-50 transition"
                     >
-                        Email to Join Waitlist →
+                        Request Beta Access →
                     </a>
                     <p class="text-center text-sm text-blue-200">
-                        Or email joel1198@gmail.com directly
+                        Email joel1198@gmail.com to apply
+                    </p>
+                </div>
+                
+                <div class="mt-8 pt-6 border-t border-white/20">
+                    <p class="text-sm text-blue-200 text-center">
+                        Currently accepting Nebraska lacrosse families only.<br>
+                        Other sports coming soon—join the waitlist to be notified.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="py-24 bg-gray-50">
-        <div class="max-w-3xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+    <!-- FAQ Section -->
+    <section class="py-24 px-4 bg-gray-50">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
                 Common Questions
             </h2>
-            <div class="space-y-6">
-                <div class="bg-white rounded-xl p-6 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">What do athletes actually do?</h3>
-                    <p class="text-gray-600">A quick 2-minute check-in each day. Rate sleep, energy, stress, and mood—plus an optional note. It's like a private journal that builds self-awareness over time.</p>
+            
+            <div class="space-y-4">
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">What does the athlete actually do?</h3>
+                    <p class="text-gray-600">A 2-minute check-in. Note how you slept, your energy, what's on your mind. That's it.</p>
                 </div>
-                <div class="bg-white rounded-xl p-6 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">Can my teen see what I see?</h3>
-                    <p class="text-gray-600">They know you see trends, not their raw entries. We've designed it so teens feel safe being honest, and parents get meaningful insights without surveillance.</p>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">What do parents see?</h3>
+                    <p class="text-gray-600">Weekly summaries showing topic frequency and themes—how often certain words came up. Not the actual check-in text (unless the athlete shares it).</p>
                 </div>
-                <div class="bg-white rounded-xl p-6 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">What if my teen doesn't want to do it?</h3>
-                    <p class="text-gray-600">We've designed check-ins to feel low-pressure—more like a personal journal than homework. Most teens actually appreciate having a way to express themselves without face-to-face conversation.</p>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">What do coaches see?</h3>
+                    <p class="text-gray-600">Nothing. This is a family tool only.</p>
                 </div>
-                <div class="bg-white rounded-xl p-6 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">Does the coach see anything?</h3>
-                    <p class="text-gray-600">Absolutely not. This is 100% for families. Coaches never have access to any wellness data. We're not a performance tracking tool—we're a family wellness tool.</p>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">Does Kinetic Team tell me what's wrong or what to do?</h3>
+                    <p class="text-gray-600">No. We show you patterns from your own check-ins. We don't interpret them, diagnose anything, or suggest actions. You decide what the information means.</p>
                 </div>
-                <div class="bg-white rounded-xl p-6 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">Why Nebraska lacrosse specifically?</h3>
-                    <p class="text-gray-600">Nebraska lacrosse families are uniquely motivated—working toward NSAA sanctioning while managing demanding club schedules. You're the perfect community to help us build something meaningful, and we want to support your efforts.</p>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">Why Nebraska lacrosse first?</h3>
+                    <p class="text-gray-600">You're the community doing the hard work—building programs while pushing for NSAA recognition. You're organized, committed, and the right families to build this with.</p>
                 </div>
-                <div class="bg-white rounded-xl p-6 shadow-sm">
-                    <h3 class="font-semibold text-gray-900 mb-2">Is it really free?</h3>
-                    <p class="text-gray-600">Yes, during the beta period. We may introduce pricing later, but beta families will always get special treatment for helping us build Kinetic Team.</p>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">Is it free?</h3>
+                    <p class="text-gray-600">Yes, during beta. We may introduce pricing later, but beta families will have lifetime benefits.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer CTA -->
-    <section class="py-16 bg-gray-900 text-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-4">
-                Ready to support your athlete—and Nebraska lacrosse?
+    <!-- Final CTA Section -->
+    <section class="py-20 px-4 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                See your own patterns. You decide what matters.
             </h2>
-            <p class="text-gray-400 mb-8">
-                Join the families building the future of lacrosse in Nebraska.
+            <p class="text-xl text-gray-400 mb-8">
+                2 minutes a day. Your check-ins. Your awareness. Your decisions.
             </p>
             <a href="#waitlist" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-700 transition">
-                Join the Beta — It's Free
+                Join the Beta →
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 bg-gray-900 border-t border-gray-800">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-            <div class="flex items-center gap-2 mb-4 md:mb-0">
-                <div class="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
-                    <span class="text-white font-bold text-xs">K</span>
+    <footer class="py-12 px-4 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center gap-2 mb-4 md:mb-0">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">K</span>
+                    </div>
+                    <span class="text-gray-400">Kinetic Team by Kinetic Labs Inc.</span>
                 </div>
-                <span>Kinetic Team by Kinetic Labs Inc.</span>
+                <div class="flex gap-6 text-gray-500 text-sm">
+                    <a href="mailto:joel1198@gmail.com" class="hover:text-white transition">Contact</a>
+                    <span>© 2025</span>
+                </div>
             </div>
-            <div class="flex gap-6">
-                <a href="mailto:joel1198@gmail.com" class="hover:text-white transition">Contact</a>
-                <span>© 2025</span>
+            
+            <div class="mt-8 pt-8 border-t border-gray-800">
+                <p class="text-gray-500 text-xs text-center max-w-3xl mx-auto">
+                    Kinetic Team is a self-monitoring tool that displays patterns from user-submitted check-ins. It does not provide medical advice, diagnosis, or treatment recommendations. Users are solely responsible for interpreting their data and deciding what actions, if any, to take. Kinetic Team is not a substitute for professional medical, psychological, or athletic advice.
+                </p>
             </div>
         </div>
     </footer>
