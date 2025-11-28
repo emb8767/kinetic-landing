@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinetic Team - Get Your Sport Sanctioned</title>
+    <meta name="description" content="The platform that helps emerging sports get sanctioned. Aggregate data, coordinate advocacy, and build the case for varsity status. Now in beta with Nebraska Lacrosse.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #059669 0%, #0d9488 50%, #0891b2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #059669 0%, #0d9488 50%, #0891b2 100%);
+        }
+        .pattern-bg {
+            background-color: #f0fdf4;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23059669' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
+        }
+        .stat-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center shadow-lg shadow-emerald-500/25">
+                    <span class="text-white font-bold text-lg">K</span>
+                </div>
+                <span class="font-bold text-gray-900 text-lg">Kinetic Team</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#problem" class="text-gray-600 hover:text-gray-900 transition text-sm font-medium">The Problem</a>
+                <a href="#solution" class="text-gray-600 hover:text-gray-900 transition text-sm font-medium">How We Help</a>
+                <a href="#features" class="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Features</a>
+                <a href="#faq" class="text-gray-600 hover:text-gray-900 transition text-sm font-medium">FAQ</a>
+            </div>
+            <a href="#waitlist" class="gradient-bg text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 transition shadow-lg shadow-emerald-500/25">
+                Join Beta
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 pattern-bg">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-semibold mb-8">
+                    <span class="text-lg">🥍</span>
+                    Nebraska Lacrosse Exclusive Beta
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
+                    Join the Families<br>
+                    <span class="gradient-text">Fighting for Varsity</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-4">
+                    The platform that helps emerging sports get sanctioned.
+                </p>
+                
+                <p class="text-lg text-gray-500 max-w-2xl mx-auto mb-10">
+                    Aggregate participation data. Coordinate parent advocacy. Build the case that gets athletic directors to vote yes.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#waitlist" class="gradient-bg text-white px-8 py-4 rounded-xl text-lg font-semibold hover:opacity-90 transition shadow-xl shadow-emerald-500/25">
+                        Join the Nebraska Lacrosse Beta →
+                    </a>
+                    <a href="#problem" class="bg-white text-gray-700 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-50 transition border border-gray-200">
+                        Why Sanctioning Fails
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stats Preview -->
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-16">
+                <div class="stat-card rounded-2xl p-6 text-center border border-emerald-100">
+                    <div class="text-4xl font-extrabold text-emerald-600 mb-2">1,200+</div>
+                    <div class="text-gray-600 text-sm">Athletes playing club lacrosse in Nebraska</div>
+                </div>
+                <div class="stat-card rounded-2xl p-6 text-center border border-emerald-100">
+                    <div class="text-4xl font-extrabold text-emerald-600 mb-2">80+</div>
+                    <div class="text-gray-600 text-sm">Schools with students who play</div>
+                </div>
+                <div class="stat-card rounded-2xl p-6 text-center border border-emerald-100">
+                    <div class="text-4xl font-extrabold text-emerald-600 mb-2">0</div>
+                    <div class="text-gray-600 text-sm">Platforms helping them get sanctioned</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem Section -->
+    <section id="problem" class="py-24 bg-gray-900 text-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    <span>💡</span>
+                    The Challenge
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Great Advocates, Missing Tools
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Parent advocates are doing incredible work—organizing clubs, attending meetings, making the case for their sport. But they're working with scattered data and no central platform to coordinate. It's not a lack of effort. It's a lack of tools.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-16">
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-8 border border-white/10">
+                    <div class="text-3xl mb-4">📞</div>
+                    <h3 class="text-xl font-bold mb-3">Scattered Data</h3>
+                    <p class="text-gray-400">
+                        Every club tracks their own numbers. Pulling it all together means emails, phone calls, and spreadsheets. It works, but it's slow.
+                    </p>
+                </div>
+                
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-8 border border-white/10">
+                    <div class="text-3xl mb-4">🔍</div>
+                    <h3 class="text-xl font-bold mb-3">Hard-to-Get Details</h3>
+                    <p class="text-gray-400">
+                        ADs want to know how many athletes are in their district. That data exists—it's just spread across clubs and hard to pull together.
+                    </p>
+                </div>
+                
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-8 border border-white/10">
+                    <div class="text-3xl mb-4">📄</div>
+                    <h3 class="text-xl font-bold mb-3">Everyone Starts From Scratch</h3>
+                    <p class="text-gray-400">
+                        Each parent creates their own materials. There's no shared template, no shared data source. Good work gets duplicated instead of amplified.
+                    </p>
+                </div>
+                
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-8 border border-white/10">
+                    <div class="text-3xl mb-4">🤝</div>
+                    <h3 class="text-xl font-bold mb-3">Too Much on Too Few</h3>
+                    <p class="text-gray-400">
+                        A small group of dedicated parents carries the load. They're doing amazing work. They shouldn't have to do it alone.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-2xl p-8 md:p-12 border border-emerald-500/20">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="text-6xl">💡</div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3">The Opportunity</h3>
+                        <p class="text-gray-300 text-lg">
+                            Passionate advocates working hard—they just need better data infrastructure to match their effort. That's where Kinetic Team comes in.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Platforms Section -->
+    <section class="py-24 px-4 bg-gray-50">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    <span>🧩</span>
+                    The Missing Piece
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Club Tools Run Your Season.<br>
+                    <span class="gradient-text">We Help You Get Recognized.</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Your club already has software for registration, schedules, and communication. Great. Kinetic Team does something different.
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-gray-50 border-b border-gray-200">
+                                <th class="text-left p-6 font-semibold text-gray-900">Feature</th>
+                                <th class="text-center p-6 font-semibold text-gray-500">Club Management Tools</th>
+                                <th class="text-center p-6 font-semibold text-emerald-600">Kinetic Team</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-100">
+                                <td class="p-6 text-gray-700">Registration & payments</td>
+                                <td class="p-6 text-center"><span class="text-2xl">✅</span></td>
+                                <td class="p-6 text-center"><span class="text-gray-400">—</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="p-6 text-gray-700">Schedules & team communication</td>
+                                <td class="p-6 text-center"><span class="text-2xl">✅</span></td>
+                                <td class="p-6 text-center"><span class="text-gray-400">—</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="p-6 text-gray-700">Game stats & standings</td>
+                                <td class="p-6 text-center"><span class="text-2xl">✅</span></td>
+                                <td class="p-6 text-center"><span class="text-gray-400">—</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-100 bg-emerald-50/50">
+                                <td class="p-6 text-gray-900 font-medium">Aggregate participation by school district</td>
+                                <td class="p-6 text-center"><span class="text-gray-400">—</span></td>
+                                <td class="p-6 text-center"><span class="text-2xl">✅</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-100 bg-emerald-50/50">
+                                <td class="p-6 text-gray-900 font-medium">Gender breakdown for Title IX</td>
+                                <td class="p-6 text-center"><span class="text-gray-400">—</span></td>
+                                <td class="p-6 text-center"><span class="text-2xl">✅</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-100 bg-emerald-50/50">
+                                <td class="p-6 text-gray-900 font-medium">Family commitment surveys</td>
+                                <td class="p-6 text-center"><span class="text-gray-400">—</span></td>
+                                <td class="p-6 text-center"><span class="text-2xl">✅</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-100 bg-emerald-50/50">
+                                <td class="p-6 text-gray-900 font-medium">Auto-generated AD reports</td>
+                                <td class="p-6 text-center"><span class="text-gray-400">—</span></td>
+                                <td class="p-6 text-center"><span class="text-2xl">✅</span></td>
+                            </tr>
+                            <tr class="bg-emerald-50/50">
+                                <td class="p-6 text-gray-900 font-medium">Coordinated advocacy tools</td>
+                                <td class="p-6 text-center"><span class="text-gray-400">—</span></td>
+                                <td class="p-6 text-center"><span class="text-2xl">✅</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    <strong>Different tools for different jobs.</strong> Your club platform handles operations. Kinetic Team handles advocacy. They work together.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="py-24 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    <span>✅</span>
+                    The Solution
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    How Kinetic Team Helps
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We turn the manual, scattered, exhausting sanctioning process into an organized, data-driven campaign.
+                </p>
+            </div>
+
+            <!-- Before/After -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-red-50 rounded-2xl p-8 border border-red-100">
+                    <div class="text-sm font-bold text-red-600 uppercase tracking-wide mb-4">Before Kinetic Team</div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">✗</span>
+                            <span class="text-gray-700">"How many athletes do we have?" — No one agrees</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">✗</span>
+                            <span class="text-gray-700">"How many from Millard district?" — "Maybe 40?"</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">✗</span>
+                            <span class="text-gray-700">"Are families committed?" — "I think so"</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">✗</span>
+                            <span class="text-gray-700">"What do I say to my AD?" — Start from scratch</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">✗</span>
+                            <span class="text-gray-700">Exhausted volunteers doing everything manually</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-emerald-50 rounded-2xl p-8 border border-emerald-100">
+                    <div class="text-sm font-bold text-emerald-600 uppercase tracking-wide mb-4">After Kinetic Team</div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="text-emerald-500 mt-1">✓</span>
+                            <span class="text-gray-700">Dashboard shows exact participation count</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-emerald-500 mt-1">✓</span>
+                            <span class="text-gray-700">"47 athletes from 6 Millard schools"</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-emerald-500 mt-1">✓</span>
+                            <span class="text-gray-700">89% answered "Yes" to sanctioning support</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-emerald-500 mt-1">✓</span>
+                            <span class="text-gray-700">Click generate, get professional one-pager</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-emerald-500 mt-1">✓</span>
+                            <span class="text-gray-700">Platform does the data work; humans do relationships</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 px-4 bg-gray-900 text-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    <span>⚡</span>
+                    Features
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Everything You Need to<br>Get Sanctioned
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <!-- Parents -->
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10 card-hover">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">👨‍👩‍👧</span>
+                    </div>
+                    <div class="text-xs font-semibold text-blue-400 uppercase tracking-wide mb-2">Parents Provide</div>
+                    <h3 class="text-lg font-bold mb-2">School Mapping</h3>
+                    <p class="text-gray-400 text-sm">
+                        Enter which school your athlete attends. We aggregate by district.
+                    </p>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10 card-hover">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">✋</span>
+                    </div>
+                    <div class="text-xs font-semibold text-blue-400 uppercase tracking-wide mb-2">Parents Provide</div>
+                    <h3 class="text-lg font-bold mb-2">Commitment Survey</h3>
+                    <p class="text-gray-400 text-sm">
+                        "Will you support sanctioning?" Turns anecdotes into data.
+                    </p>
+                </div>
+
+                <!-- Clubs -->
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10 card-hover">
+                    <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">🏟️</span>
+                    </div>
+                    <div class="text-xs font-semibold text-amber-400 uppercase tracking-wide mb-2">Clubs Provide</div>
+                    <h3 class="text-lg font-bold mb-2">Aggregate Counts</h3>
+                    <p class="text-gray-400 text-sm">
+                        Total athletes, gender breakdown, schools represented. One input per season.
+                    </p>
+                </div>
+
+                <!-- Platform -->
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10 card-hover">
+                    <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">📊</span>
+                    </div>
+                    <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wide mb-2">Platform Generates</div>
+                    <h3 class="text-lg font-bold mb-2">Statewide Dashboard</h3>
+                    <p class="text-gray-400 text-sm">
+                        Auto-aggregated totals by school, district, and gender. One source of truth.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10 card-hover">
+                    <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">📄</span>
+                    </div>
+                    <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wide mb-2">Platform Generates</div>
+                    <h3 class="text-lg font-bold mb-2">AD One-Pager</h3>
+                    <p class="text-gray-400 text-sm">
+                        Professional PDF for your district. Auto-filled with real data. One click.
+                    </p>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10 card-hover">
+                    <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">📢</span>
+                    </div>
+                    <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wide mb-2">Platform Generates</div>
+                    <h3 class="text-lg font-bold mb-2">Advocacy Updates</h3>
+                    <p class="text-gray-400 text-sm">
+                        "5 new families from your district joined this week." See the movement grow.
+                    </p>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10 card-hover">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">💬</span>
+                    </div>
+                    <div class="text-xs font-semibold text-purple-400 uppercase tracking-wide mb-2">Community</div>
+                    <h3 class="text-lg font-bold mb-2">Parent Feed</h3>
+                    <p class="text-gray-400 text-sm">
+                        Share updates, meeting times, news. AI-moderated. 100% automated.
+                    </p>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10 card-hover">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">🏆</span>
+                    </div>
+                    <div class="text-xs font-semibold text-purple-400 uppercase tracking-wide mb-2">Coordination</div>
+                    <h3 class="text-lg font-bold mb-2">AD Contact Tracker</h3>
+                    <p class="text-gray-400 text-sm">
+                        "12 families contacted their AD in Millard." Leaderboard + reminders.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-24 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    How It Works
+                </h2>
+            </div>
+
+            <div class="relative">
+                <!-- Connection line -->
+                <div class="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-emerald-100 -translate-y-1/2 z-0"></div>
+                
+                <div class="grid md:grid-cols-5 gap-8 relative z-10">
+                    <div class="text-center">
+                        <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl shadow-lg shadow-emerald-500/25">1</div>
+                        <h3 class="font-bold text-gray-900 mb-2">Parents Join</h3>
+                        <p class="text-gray-600 text-sm">Sign up, enter your athlete's school, answer commitment question</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl shadow-lg shadow-emerald-500/25">2</div>
+                        <h3 class="font-bold text-gray-900 mb-2">Clubs Join</h3>
+                        <p class="text-gray-600 text-sm">Input aggregate counts, gender breakdown, schools represented</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl shadow-lg shadow-emerald-500/25">3</div>
+                        <h3 class="font-bold text-gray-900 mb-2">Data Aggregates</h3>
+                        <p class="text-gray-600 text-sm">Platform combines all data into statewide dashboard</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl shadow-lg shadow-emerald-500/25">4</div>
+                        <h3 class="font-bold text-gray-900 mb-2">Parents Advocate</h3>
+                        <p class="text-gray-600 text-sm">Generate one-pagers, contact ADs, track progress</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl shadow-lg shadow-emerald-500/25">5</div>
+                        <h3 class="font-bold text-gray-900 mb-2">Sport Gets Sanctioned</h3>
+                        <p class="text-gray-600 text-sm">State association sees the data, hears the voices, votes yes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nebraska Section -->
+    <section class="py-24 px-4 pattern-bg">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="text-6xl mb-6">🥍</div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Why Nebraska Lacrosse First?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    You're not just playing a sport. You're building a movement.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-12">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">You're the right community</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start gap-3">
+                                <span class="text-emerald-500 mt-1">✓</span>
+                                <span>Organized clubs across Omaha and Lincoln</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-emerald-500 mt-1">✓</span>
+                                <span>Families already spending $1,500-3,700/year</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-emerald-500 mt-1">✓</span>
+                                <span>Active push for NSAA sanctioning</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-emerald-500 mt-1">✓</span>
+                                <span>Passionate parent advocates (who need better tools)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">What beta families get</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start gap-3">
+                                <span class="text-emerald-500 mt-1">✓</span>
+                                <span>Free access during beta</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-emerald-500 mt-1">✓</span>
+                                <span>Direct input on features we build</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-emerald-500 mt-1">✓</span>
+                                <span>Founding member benefits when we launch</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-emerald-500 mt-1">✓</span>
+                                <span>First access to sanctioning tools</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-emerald-900 text-white rounded-2xl p-8 md:p-12">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="text-6xl">🇺🇸</div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3">Coming Soon: Other Sports & States</h3>
+                        <p class="text-emerald-100 text-lg">
+                            Nebraska lacrosse is first. But this platform works for any emerging sport in any state—hockey in Texas, flag football in Tennessee, wrestling in Iowa. Join the beta to help us build it right.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 px-4 bg-gray-50">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
+                Common Questions
+            </h2>
+            
+            <div class="space-y-4">
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">What do parents actually do?</h3>
+                    <p class="text-gray-600">Sign up, enter which school your athlete attends, answer whether you support sanctioning. That's the core. Then you can generate one-pagers for your AD, see advocacy updates, and share news with other families.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">What do clubs do?</h3>
+                    <p class="text-gray-600">Club reps enter aggregate numbers once per season: total athletes, gender breakdown, and which schools are represented. No roster management, no names—just counts for advocacy.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">Is this another club management app?</h3>
+                    <p class="text-gray-600">No. We don't do registration, schedules, or team chat. We aggregate participation data across every club in the state and give parents the tools to advocate for sanctioning. That's it.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">Why would clubs join?</h3>
+                    <p class="text-gray-600">Because parents will ask them to. And because the platform generates reports that help clubs too—board presentations, advocacy materials, visibility into statewide growth.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">Is it free?</h3>
+                    <p class="text-gray-600">Yes, during beta. We're still figuring out the right model. Beta families will have input on pricing and get founding member benefits.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">Why Nebraska lacrosse first?</h3>
+                    <p class="text-gray-600">You're an organized, committed community actively pushing for NSAA sanctioning. You're the perfect partners to build this with—and you need these tools now.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">When will the platform be ready?</h3>
+                    <p class="text-gray-600">We're building now. Beta families will get early access and help shape the features. Join the waitlist to be first.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist Section with Tally Form -->
+    <section id="waitlist" class="py-24 px-4">
+        <div class="max-w-2xl mx-auto">
+            <div class="gradient-bg rounded-3xl p-8 md:p-12 text-white shadow-2xl">
+                <div class="text-center mb-8">
+                    <div class="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full text-sm mb-6">
+                        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                        Now Accepting Beta Applications
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">Join the Nebraska Lacrosse Beta</h2>
+                    <p class="text-emerald-100">
+                        Help us build the platform that gets lacrosse sanctioned. Free during beta. Your feedback shapes the product.
+                    </p>
+                </div>
+                
+                <!-- Tally Form Embed -->
+                <div class="bg-white rounded-2xl p-4 md:p-6">
+                    <iframe 
+                        data-tally-src="https://tally.so/embed/68DKzA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+                        loading="lazy" 
+                        width="100%" 
+                        height="762" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0" 
+                        title="Join the Nebraska Lacrosse Beta">
+                    </iframe>
+                    <script>
+                        var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}
+                    </script>
+                </div>
+                
+                <div class="mt-8 pt-6 border-t border-white/20">
+                    <p class="text-sm text-emerald-200 text-center">
+                        Currently accepting Nebraska lacrosse families and club leaders.<br>
+                        Other sports and states coming soon.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 px-4 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Your sport deserves varsity status.<br>
+                <span class="gradient-text">Let's make it happen.</span>
+            </h2>
+            <p class="text-xl text-gray-400 mb-8">
+                Aggregate the data. Coordinate the advocacy. Get sanctioned.
+            </p>
+            <a href="#waitlist" class="inline-block gradient-bg text-white px-8 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition shadow-xl shadow-emerald-500/25">
+                Join the Nebraska Lacrosse Beta →
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center gap-3 mb-4 md:mb-0">
+                    <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">K</span>
+                    </div>
+                    <span class="text-gray-400 font-medium">Kinetic Team</span>
+                </div>
+                <div class="flex gap-6 text-gray-500 text-sm">
+                    <span>© 2025 Kinetic Team</span>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-gray-800">
+                <p class="text-gray-500 text-xs text-center max-w-3xl mx-auto">
+                    Kinetic Team is a platform that aggregates participation data and coordinates advocacy efforts for emerging sports seeking sanctioning. We do not guarantee sanctioning outcomes. Success depends on community participation and state association decisions.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
